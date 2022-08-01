@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "365717110779",
+    "project_id": "myshop-fcc5a",
+    "storage_bucket": "myshop-fcc5a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:365717110779:android:6812a002b813cc546ad55e",
+        "android_client_info": {
+          "package_name": "com.example.myshopeeukotlin"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "365717110779-81st13dgip6ss7h1f7f5nvfni58r2r6s.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAzSRH99EObRs-6W9gXG4g0CB2PXHxDOb4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "365717110779-81st13dgip6ss7h1f7f5nvfni58r2r6s.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

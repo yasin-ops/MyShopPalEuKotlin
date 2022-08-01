@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    tools:context=".activities.SettingActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <FrameLayout
+            android:id="@+id/f1_header_bg"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/header_image_height">
+
+            <ImageView
+                android:id="@+id/iv_header_bg"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:contentDescription="@string/content_description"
+                android:scaleType="fitXY"
+                android:src="@drawable/ic_back_arrow_24">
+
+            </ImageView>
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/tool_bar_setting_activity"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize">
+
+                <TextView
+                    android:id="@+id/tv_tittle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:paddingStart="@dimen/toolbar_title_paddingStart"
+                    android:paddingEnd="0dp"
+
+                    android:text="@string/action_setting"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/title_textSize"
+                    android:textStyle="bold">
+
+                </TextView>
+
+            </androidx.appcompat.widget.Toolbar>
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/f1_user_image"
+            android:layout_width="@dimen/setting_user_image_size"
+            android:layout_height="@dimen/setting_user_image_size"
+            android:layout_below="@id/f1_header_bg"
+
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/setting_user_image_marginTop">
+
+            <ImageView
+                android:id="@+id/iv_user_photo"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/shop">
+
+            </ImageView>
+
+            <View
+                android:id="@+id/setting_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/user_image_background">
+
+            </View>
+
+        </FrameLayout>
+
+        <com.example.myshopeeukotlin.utils.MSPTextView
+            android:id="@+id/tv_edit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/f1_header_bg"
+            android:layout_alignParentEnd="true"
+            android:layout_margin="16dp"
+            android:background="@drawable/item_grey_border_background"
+            android:foreground="?attr/selectableItemBackgroundBorderless"
+            android:paddingStart="@dimen/setting_edit_label_marginStartEnd"
+            android:paddingTop="@dimen/setting_edit_label_marginTopBottom"
+            android:paddingEnd="@dimen/setting_edit_label_marginStartEnd"
+            android:text="@string/lbl_edit"
+            android:textColor="@color/ColorSecondaryText"
+            android:textSize="@dimen/setting_edit_label_textSize">
+
+        </com.example.myshopeeukotlin.utils.MSPTextView>
+
+        <com.example.myshopeeukotlin.utils.MSPTextViewBold
+            android:id="@+id/tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/f1_user_image"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="16dp"
+            android:background="@drawable/item_grey_border_background"
+            android:foreground="?attr/selectableItemBackgroundBorderless"
+            android:gravity="center"
+            android:paddingStart="@dimen/setting_edit_label_marginStartEnd"
+            android:paddingTop="@dimen/setting_edit_label_marginTopBottom"
+            android:paddingEnd="@dimen/setting_edit_label_marginStartEnd"
+            android:text="@string/lbl_edit"
+            android:textColor="@color/ColorSecondaryText"
+            android:textSize="@dimen/setting_edit_label_textSize">
+
+
+        </com.example.myshopeeukotlin.utils.MSPTextViewBold>
+
+        <com.example.myshopeeukotlin.utils.MSPTextViewBold
+            android:id="@+id/tv_gender"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_below="@id/tv_name"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/item_grey_border_background"
+            android:foreground="?attr/selectableItemBackgroundBorderless"
+            android:gravity="center"
+            android:paddingStart="@dimen/setting_edit_label_marginStartEnd"
+            android:paddingTop="@dimen/setting_edit_label_marginTopBottom"
+            android:paddingEnd="@dimen/setting_edit_label_marginStartEnd"
+            android:text="Male"
+            android:textColor="@color/ColorSecondaryText"
+            android:textSize="@dimen/setting_info_text_size">
+
+        </com.example.myshopeeukotlin.utils.MSPTextViewBold>
+
+        <com.example.myshopeeukotlin.utils.MSPTextViewBold
+            android:id="@+id/tv_email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_gender"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="12dp"
+
+
+            android:background="@drawable/item_grey_border_background"
+            android:foreground="?attr/selectableItemBackgroundBorderless"
+            android:gravity="center"
+            android:paddingStart="@dimen/setting_edit_label_marginStartEnd"
+            android:paddingTop="@dimen/setting_edit_label_marginTopBottom"
+            android:paddingEnd="@dimen/setting_edit_label_marginStartEnd"
+            android:text="Male"
+            android:textColor="@color/ColorSecondaryText"
+            android:textSize="@dimen/setting_info_text_size">
+
+        </com.example.myshopeeukotlin.utils.MSPTextViewBold>
+
+
+        <com.example.myshopeeukotlin.utils.MSPTextViewBold
+            android:id="@+id/tv_mobile_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_email"
+            android:layout_centerHorizontal="true"
+
+            android:layout_marginTop="12dp"
+
+
+            android:background="@drawable/item_grey_border_background"
+            android:foreground="?attr/selectableItemBackgroundBorderless"
+            android:gravity="center"
+            android:paddingStart="@dimen/setting_edit_label_marginStartEnd"
+            android:paddingTop="@dimen/setting_edit_label_marginTopBottom"
+            android:paddingEnd="@dimen/setting_edit_label_marginStartEnd"
+            android:text="mobile number"
+            android:textColor="@color/ColorSecondaryText"
+            android:textSize="@dimen/setting_info_text_size">
+
+        </com.example.myshopeeukotlin.utils.MSPTextViewBold>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:id="@+id/ll_address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_mobile_number"
+            android:layout_marginStart="@dimen/setting_address_margin"
+            android:layout_marginTop="@dimen/setting_address_margin"
+            android:layout_marginEnd="@dimen/setting_address_margin"
+            android:layout_marginBottom="@dimen/setting_address_margin"
+            android:foreground="?attr/selectableItemBackground"
+            android:orientation="horizontal"
+            android:padding="@dimen/setting_address_padding">
+
+            <com.example.myshopeeukotlin.utils.MSPTextView
+                android:id="@+id/tv_address"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/setting_lbl_address_margin"
+                android:layout_weight="1"
+                android:text="@string/lb1_address"
+                android:textColor="@color/ColorSecondaryText"
+
+                android:textSize="@dimen/setting_lbl_address_text_size">
+
+
+            </com.example.myshopeeukotlin.utils.MSPTextView>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/content_description"
+                android:src="@drawable/ic_back_arrow_24"></ImageView>
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <com.example.myshopeeukotlin.utils.MSPButton
+            android:id="@+id/btn_logout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ll_address"
+            android:layout_gravity="center"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/button_background"
+            android:foreground="?attr/selectableItemBackground"
+            android:gravity="center"
+            android:paddingTop="@dimen/btn_padding"
+            android:paddingBottom="@dimen/btn_padding"
+            android:text="@string/btn_lb1_logout"
+            android:textColor="@color/white"
+            android:textSize="@dimen/btn_textSize">
+
+        </com.example.myshopeeukotlin.utils.MSPButton>
+
+
+    </RelativeLayout>
+
+</ScrollView>

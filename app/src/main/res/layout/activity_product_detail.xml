@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activities.ProductDetailActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar_product_detail_activity"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize">
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="@string/title_product_detail"
+            android:textAlignment="center">
+
+        </TextView>
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/product_detail_image"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/product_detail_image_height"
+                android:background="@color/colorImageViewBackground"
+                android:contentDescription="@string/content_description"
+                android:scaleType="fitXY">
+
+            </ImageView>
+
+            <com.example.myshopeeukotlin.utils.MSPTextViewBold
+                android:id="@+id/tv_product_details_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="$Price"
+                android:textColor="@color/colorImageViewBackground"
+                android:textSize="@dimen/product_details_price_textSize">
+
+            </com.example.myshopeeukotlin.utils.MSPTextViewBold>
+
+            <com.example.myshopeeukotlin.utils.MSPTextViewBold
+                android:id="@+id/tv_product_details_price"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="$Price"
+                android:textColor="@color/colorImageViewBackground"
+                android:textSize="@dimen/product_details_price_textSize">
+
+            </com.example.myshopeeukotlin.utils.MSPTextViewBold>
+
+            <com.example.myshopeeukotlin.utils.MSPTextViewBold
+                android:id="@+id/tv_product_details_lbl"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/product_details_label_margin"
+                android:text="@string/lbl_product_description"
+                android:textColor="@color/item_value_text_color"
+                android:textSize="@dimen/product_details_label_textSize"></com.example.myshopeeukotlin.utils.MSPTextViewBold>
+
+            <com.example.myshopeeukotlin.utils.MSPTextViewBold
+                android:id="@+id/tv_product_details_description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/product_details_label_margin"
+                android:layout_marginEnd="@dimen/product_details_label_margin"
+                android:text="this is a product detail Description"
+                android:textColor="@color/ColorSecondaryText"
+                android:textSize="@dimen/product_details_label_textSize"></com.example.myshopeeukotlin.utils.MSPTextViewBold>
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/ll_product_deatail_quantity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/product_details_label_margin"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <com.example.myshopeeukotlin.utils.MSPTextViewBold
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Stock Quantity">
+
+                </com.example.myshopeeukotlin.utils.MSPTextViewBold>
+
+                <com.example.myshopeeukotlin.utils.MSPTextViewBold
+                    android:id="@+id/tv_product_details_available_stock_quantity"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/item_grey_border_background"
+                    android:paddingStart="@dimen/product_deatail_stock_quantity_paddingStartEnd"
+
+                    android:paddingTop="@dimen/product_deatail_stock_quantity_paddingTopBottom"
+                    android:paddingEnd="@dimen/product_deatail_stock_quantity_paddingStartEnd"
+                    android:text="5"
+                    android:textColor="@color/ColorSecondaryText">
+
+                </com.example.myshopeeukotlin.utils.MSPTextViewBold>
+
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <com.example.myshopeeukotlin.utils.MSPButton
+                android:id="@+id/btn_add_to_cart"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginBottom="16dp"
+                android:background="@drawable/button_background"
+                android:foreground="?attr/selectableItemBackground"
+                android:gravity="center"
+                android:paddingTop="@dimen/btn_padding"
+                android:paddingBottom="@dimen/btn_padding"
+                android:text="@string/btn_lb1_add_to_cart"
+                android:textColor="@color/ColorSecondaryText"
+                android:textSize="@dimen/btn_textSize"
+                android:visibility="visible">
+
+            </com.example.myshopeeukotlin.utils.MSPButton>
+
+
+            <com.example.myshopeeukotlin.utils.MSPButton
+                android:id="@+id/btn_go_to_cart"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginBottom="16dp"
+                android:background="@drawable/button_background"
+                android:foreground="?attr/selectableItemBackground"
+                android:gravity="center"
+                android:paddingTop="@dimen/btn_padding"
+                android:paddingBottom="@dimen/btn_padding"
+                android:text="@string/btn_lbl_go_to_cart"
+                android:textColor="@color/ColorSecondaryText"
+                android:textSize="@dimen/btn_textSize"
+                android:visibility="visible"
+                tools:visibility="visible">
+
+            </com.example.myshopeeukotlin.utils.MSPButton>
+
+
+
+        </LinearLayout>
+
+    </ScrollView>
+</LinearLayout>
